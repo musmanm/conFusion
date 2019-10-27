@@ -77,6 +77,77 @@
             </div>
         </div>
     </div>
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a Table</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="guests" class="col-md-2 col-form-label">Number of Guests</label>
+                            <div class="col-12 col-md-10">
+                                <input type="checkbox" class="for-check-input" name="approve1" id="approve1" value="">
+                                <label class="form-check-label mr-3" for="approve1">
+                                    <strong>1</strong>
+                                </label>
+                                <input type="checkbox" class="for-check-input" name="approve2" id="approve2" value="">
+                                <label class="form-check-label mr-3" for="approve2">
+                                    <strong>2</strong>
+                                </label>
+                                <input type="checkbox" class="for-check-input" name="approve3" id="approve3" value="">
+                                <label class="form-check-label mr-3" for="approve3">
+                                    <strong>3</strong>
+                                </label>
+                                <input type="checkbox" class="for-check-input" name="approve4" id="approve4" value="">
+                                <label class="form-check-label mr-3" for="approve4">
+                                    <strong>4</strong>
+                                </label>
+                                <input type="checkbox" class="for-check-input" name="approve5" id="approve5" value="">
+                                <label class="form-check-label mr-3" for="approve5">
+                                    <strong>5</strong>
+                                </label>
+                                <input type="checkbox" class="for-check-input" name="approve6" id="approve6" value="">
+                                <label class="form-check-label mr-3" for="approve6">
+                                    <strong>6</strong>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="guests" class="col-md-2 col-form-label">Section</label>
+                            <div class="col-12 col-md-10">
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                                    </label>
+                                    <label class="btn btn-danger">
+                                        <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                    </label>
+                                </div> 
+                            </div>     
+                        </div>
+                        <div class="form-group row">
+                            <label for="datetime" class="col-12 col-md-2 col-form-label">Date and Time</label>
+                            <div class="col-12 col-md-4">
+                                <input type="date" class="form-control" id="date" name="date" placeholder="Date">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <input type="time" class="form-control" id="time" name="time" placeholder="Time">
+                            </div>      
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-6">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Reserve</button>   
+                            </div> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header class="jumbotron">
         <div class="container">
@@ -85,13 +156,11 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm-3 align-self-center">
+                <div class="col-12 col-sm-auto align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
-                <div class="col-12 col-sm-3 align-self-center">
-                    <a href="#reserve-form" data-toggle="tooltip" data-html="true" title="Or call us at <br><strong>+1 333-333-3333</strong>" data-placement="bottom">
-                        <button type="button" class="btn btn-sm btn-block btn-warning">Reserve Table</button>
-                    </a>
+                <div class="col-12 col-sm-auto align-self-center">
+                    <button type="button" class="btn btn-block btn-warning" data-toggle="modal" data-target="#reserveModal">Reserve Table</button>
                 </div>
             </div>
         </div>
@@ -191,7 +260,7 @@
                 </div>
             </div>
         </div>
-        <div class="row row-content" id="reserve-form">
+<!--    <div class="row row-content" id="reserve-form">
             <div class="col-sm">
                 <div class="card">
                     <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
@@ -244,7 +313,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <footer class="footer">
@@ -293,11 +362,11 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
+    <!-- <script>
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip()
         })
-    </script>
+    </script> -->
 
 </body>
 
