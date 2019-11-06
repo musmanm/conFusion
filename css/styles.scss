@@ -15,6 +15,14 @@ $carousel-item-height: 300px;
     @include zero-margin(0px,0px);
 }
 
+.modal-header{
+    background-color: $background-dark;
+}
+
+.modal-body{
+    background-color: $background-pale;
+}
+
 .row-content {
     @include zero-margin(50px,0px);
     border-bottom: 1px ridge;
